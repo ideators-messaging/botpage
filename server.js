@@ -1,10 +1,9 @@
 var express = require("express");
-var path = require("path");
 var app = express();
-app.use(express.static(__dirname + "/public"));
+var path = __dirname + "/";
 
 app.get("/", function (req, res) {
-  res.send("<h1>Open Source For You!!</h1>");
+  res.sendFile(path + "index.html");
 });
 
 var server = app.listen(process.env.PORT || 6001, function () {
