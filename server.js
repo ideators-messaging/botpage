@@ -7,6 +7,7 @@ app.get("/", function (req, res) {
   res.send("<h1>Open Source For You!</h1>");
 });
 
-app.listen(3000, function () {
-  console.log("Example app listening on port 3000!");
+var server = app.listen(process.env.PORT || 6001, function () {
+  var port = server.address().port;
+  console.log("App now running on port ", port);
 });
