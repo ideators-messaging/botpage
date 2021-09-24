@@ -14,8 +14,9 @@
 	    brandembassy('sendFirstMessageAutomatically', 'Welcome to RBC messaging!');
 	    brandembassy('showCaseInfo');
 	    brandembassy('showSendButton');
-	    brandembassy('setAgentImage', 'live-chat.png');
+	    //brandembassy('setAgentImage', 'live-chat.png'); this didn't work
 	    brandembassy('setCustomCss', '[data-selector="AGENT_MESSAGE_BUBBLE"]{background: #ccffff}');
+        brandembassy('setCustomCss', '[data-selector="AVATAR"]{content:url("live-chat.png"); width:"32px"; height:"32px";}');
     }
 
 </script>
