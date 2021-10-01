@@ -8,15 +8,16 @@
 		}) (window, document, 'script', 'brandembassy', 'https://livechat-static-de-na1.niceincontact.com/4/chat.js');
 
 		brandembassy('init', 1396, 'chat_c039fb1e-21ad-4dfb-aa48-8a4b7b9103e2');
-	        brandembassy('setCustomerName', 'Jane Smith');
+	    brandembassy('setCustomerName', 'Jane Smith');
 
-	    brandembassy('hideFirstSentMessage', false);
-	    brandembassy('sendFirstMessageAutomatically', 'Welcome to RBC messaging!');
+        brandembassy('setCustomField', 'source', 'bot-3');
+	    //brandembassy('hideFirstSentMessage', false);
+	    //brandembassy('sendFirstMessageAutomatically', 'Welcome to RBC messaging!');
 	    brandembassy('showCaseInfo');
 	    brandembassy('showSendButton');
 	    //brandembassy('setAgentImage', 'live-chat.png'); this didn't work
 	    brandembassy('setCustomCss', '[data-selector="AGENT_MESSAGE_BUBBLE"]{background-color: #c9eaf1;}[data-selector="AVATAR"]{content:url("agent.png"); width:"32px"; height:"32px";}');
-        //brandembassy('setCustomCss', '[data-selector="AVATAR"]{content:url("agent.png"); width:"32px"; height:"32px";}');
+        
     }
 
 </script>
