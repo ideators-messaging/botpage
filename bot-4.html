@@ -1,26 +1,21 @@
 <script>
     function startBot() {
-		(function (i, s, o, r, g, v, a, m) {
-		g = v ? g + '?v=' + v : g; i['BrandEmbassy'] = r;
-		i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }; i[r].l = +new Date();
-		a = s.createElement(o); m = s.getElementsByTagName(o)[0]; a.async = 1;
-		a.src = g + '?' + Math.round(Date.now() / 1000 / 3600); m.parentNode.insertBefore(a, m)
-		}) (window, document, 'script', 'brandembassy', 'https://livechat-static-de-na1.niceincontact.com/4/chat.js');
+      (function (i, s, o, r, g, v, a, m) {
+      g = v ? g + '?v=' + v : g; i['BrandEmbassy'] = r;
+      i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }; i[r].l = +new Date();
+      a = s.createElement(o); m = s.getElementsByTagName(o)[0]; a.async = 1;
+      a.src = g + '?' + Math.round(Date.now() / 1000 / 3600); m.parentNode.insertBefore(a, m)
+      }) (window, document, 'script', 'brandembassy', 'https://livechat-static-de-na1.niceincontact.com/4/chat.js');
 
-		  brandembassy('init', 1396, 'chat_c039fb1e-21ad-4dfb-aa48-8a4b7b9103e2');
-	    brandembassy('setCustomerName', 'Jane Smith');
-
-      brandembassy('setCustomField', 'entry_point', 'rbc.com/paybill.html');
-			brandembassy('setCustomField', 'subject', 'bill_payment');
-	    //brandembassy('hideFirstSentMessage', false);
-	    //brandembassy('sendFirstMessageAutomatically', 'Welcome to RBC messaging!');
-	    brandembassy('showCaseInfo');
-	    brandembassy('showSendButton');
-	    //brandembassy('setAgentImage', 'live-chat.png'); this didn't work
-	    brandembassy('setCustomCss', '[data-selector="AGENT_MESSAGE_BUBBLE"]{background-color: #c9eaf1;}[data-selector="AVATAR"]{content:url("agent.png"); width:"32px"; height:"32px";}');
-        
+        brandembassy('init', 1396, 'chat_c039fb1e-21ad-4dfb-aa48-8a4b7b9103e2');
+        brandembassy('setCustomerName', 'Sara Carter');
+        brandembassy('setCustomField', 'entry_point', 'client_1');
+        brandembassy('setCustomField', 'subject', 'credit');
+        //brandembassy('hideFirstSentMessage', false);
+        //brandembassy('sendFirstMessageAutomatically', 'Welcome to RBC messaging!');
+        brandembassy('showCaseInfo');
+        brandembassy('showSendButton');
     }
-
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
