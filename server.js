@@ -13,7 +13,7 @@ app.get("/bot-2", function (req, res) {
 app.get("/bot-3", function (req, res) {
   res.sendFile(__dirname + "/bot-3.html");
 });
-
+//New route for NICE smart assist integration
 app.get("/smartassist", function (req, res) {
   res.sendFile(__dirname + "/nice_smartassist.html");
 });
