@@ -14,6 +14,10 @@ app.get("/bot-3", function (req, res) {
   res.sendFile(__dirname + "/bot-3.html");
 });
 
+app.get("/smartassist", function (req, res) {
+  res.sendFile(__dirname + "/nice_smartassist.html");
+});
+
 var server = app.listen(process.env.PORT || 6001, function () {
   var port = server.address().port;
   console.log("App now running on port ", port);
