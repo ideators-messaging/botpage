@@ -1,0 +1,30 @@
+.jumbotron-landingpage {
+  background-image: url('/rbc/images/ID01_account.jpg');
+  background-position:center center;
+  background-size: cover;
+  border-top: 1px grey solid;
+  border-bottom: 1px grey solid;
+  color: #FFFFFF;
+  height: 35em;
+}
+.jumbotron-landingpage h1 {
+  text-align:center;
+}
+
+
+
+.navbar {
+  margin-bottom: 0px;   /* default value is 20px */
+}
+
+.footer {
+  height: 100px;
+  background-color: #585858;
+  vertical-align: middle;
+}
+
+.no-indent {
+  margin-left:0px;
+  padding-left: 0px;
+}
+
