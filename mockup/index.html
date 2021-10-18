@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- inc_html_head.php  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Banking - RBC Royal Bank</title>
+    <meta name="description" content="Explore the personal banking services and products available from RBC Royal Bank to help you manage your finances, buy a home, invest and more.">
+    <meta name="keywords" content="personal banking, bank accounts, credit cards, loans, mortgages, rbc, royal bank of canada">
+    <meta property="og:title" content="Get the Personal Banking Products and Services You Need">
+    <meta property="og:description" content="Whatever you need, RBC Royal Bank has a wide range of personal banking products, services and tools to help you manage your finances, save for retirement, buy a home and much more.">
+    <meta name="author" content="Pratik Mehta">
+    <link rel="shortcut icon" href="favicon.ico">    
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="/images/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/touch-icon-iphone-retina.png">  
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/touch-icon-ipad-retina.png">
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- Stylesheets -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">   <!-- http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css -->
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <link href="css/rbc.css" rel="stylesheet" type="text/css">
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css"/>
+    <!-- <link rel="stylesheet" href="../css/dvl.min.css"> -->
+    <link rel="stylesheet" href="css/styles.min.css">
+    
+    
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- JavaScript libraries -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/lightbox.min.js"></script>
+
+    <style>
+    </style>
+    
+    <script type="text/javascript">
+      var img2 = new Image();  img2.src = "images/menu-business-on.jpg";
+      var img4 = new Image();  img4.src = "images/menu-wealth-on.jpg";
+      var img6 = new Image();  img6.src = "images/menu-institutional-on.jpg";
+      var img8 = new Image();  img8.src = "images/menu-rbclabs-on.jpg";
+      var img10 = new Image();  img10.src = "images/menu-aboutrbc-on.jpg";
+      var img11 = new Image();  img11.src = "images/menu-accounts-on.jpg";
+      var img12 = new Image();  img12.src = "images/menu-creditcards-on.jpg";
+      var img14 = new Image();  img14.src = "images/menu-mortgages-on.jpg";
+      var img16 = new Image();  img16.src = "images/menu-loans-on.jpg";
+      var img18 = new Image();  img18.src = "images/menu-investments-on.jpg";
+      var img19 = new Image();  img19.src = "images/menu-insurance-on.jpg"; 
+      var img20 = new Image();  img20.src = "images/menu-moreservices-on.jpg";
+      var img21 = new Image();  img21.src = "images/menu-contactus-on.jpg";
+      var img22 = new Image();  img22.src = "images/menu-signin-on.jpg";
+    
+      var selectedTopic = 'general';
+
+      function startBot() {
+      (function (i, s, o, r, g, v, a, m) {
+      g = v ? g + '?v=' + v : g; i['BrandEmbassy'] = r;
+      i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }; i[r].l = +new Date();
+      a = s.createElement(o); m = s.getElementsByTagName(o)[0]; a.async = 1;
+      a.src = g + '?' + Math.round(Date.now() / 1000 / 3600); m.parentNode.insertBefore(a, m)
+      }) (window, document, 'script', 'brandembassy', 'https://livechat-static-de-na1.niceincontact.com/4/chat.js');
+
+      brandembassy('init', 1396, 'chat_c039fb1e-21ad-4dfb-aa48-8a4b7b9103e2');
+      brandembassy('setCustomerName', 'Sara Carter');
+      //brandembassy('setCustomerName', selectedTopic);    // for debugging
+      brandembassy('setCustomField', 'entry_point', 'https://rbc.com');
+      brandembassy('setCustomField', 'subject', selectedTopic);
+      brandembassy('setCustomField', 'ccn', '4519026429303662');
+      //brandembassy('hideFirstSentMessage', false);
+      //brandembassy('sendFirstMessageAutomatically', 'Welcome to RBC messaging!');
+      //brandembassy('showCaseInfo');
+      brandembassy('showSendButton');
+      brandembassy('autoStartSession');
+			brandembassy('openChatWindow');
+    }
+
+      $(document).ready(function(){
+        $(".topic").change(function(){
+          selectedTopic = $(this).children("option:selected").val();
+        });
+
+        $( ".startmessaging" ).click(function() {
+          event.preventDefault();
+          startBot();
+        });
+
+        $(function(){
+          $("#menu-business").on({
+            mouseenter: function(){$(this).attr('src','images/menu-business-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-business-off.jpg');}
+          });
+          $("#menu-wealth").on({
+            mouseenter: function(){$(this).attr('src','images/menu-wealth-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-wealth-off.jpg');}
+          });
+          $("#menu-institutional").on({
+            mouseenter: function(){$(this).attr('src','images/menu-institutional-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-institutional-off.jpg');}
+          });
+          $("#menu-rbclabs").on({
+            mouseenter: function(){$(this).attr('src','images/menu-rbclabs-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-rbclabs-off.jpg');}
+          });
+          $("#menu-aboutrbc").on({
+            mouseenter: function(){$(this).attr('src','images/menu-aboutrbc-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-aboutrbc-off.jpg');}
+          });
+          $("#menu-accounts").on({
+            mouseenter: function(){$(this).attr('src','images/menu-accounts-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-accounts-off.jpg');}
+          });
+          $("#menu-creditcards").on({
+            mouseenter: function(){$(this).attr('src','images/menu-creditcards-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-creditcards-off.jpg');}
+          });
+          $("#menu-mortgages").on({
+            mouseenter: function(){$(this).attr('src','images/menu-mortgages-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-mortgages-off.jpg');}
+          });
+          $("#menu-loans").on({
+            mouseenter: function(){$(this).attr('src','images/menu-loans-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-loans-off.jpg');}
+          });
+          $("#menu-investments").on({
+            mouseenter: function(){$(this).attr('src','images/menu-investments-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-investments-off.jpg');}
+          });
+          $("#menu-insurance").on({
+            mouseenter: function(){$(this).attr('src','images/menu-insurance-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-insurance-off.jpg');}
+          });
+          $("#menu-contactus").on({
+            mouseenter: function(){$(this).attr('src','images/menu-contactus-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-contactus-off.jpg');}
+          });
+          $("#menu-signin").on({
+            mouseenter: function(){$(this).attr('src','images/menu-signin-on.jpg');},
+            mouseleave: function(){$(this).attr('src','images/menu-signin-off.jpg');}
+          });
+        });
+      });  // end document.ready
+    </script>
+  </head>
+  <body>
+    <a name="skip-nav"></a> 
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- Main Navbar at the top.  Finalized   -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <div style="background-color:#434343; height:30px;" class="hidden-xs hidden-sm">
+      <div class="container hidden-xs hidden-sm">
+        <div class="row">
+          <div class="col-sm-12">
+            <span>
+              <a href="https://www.rbc.com/canada.html"><img  id="menu-personal" src="images/menu-personal-on.jpg" alt="Personal" style="margin-right:20px;"></a>
+              <a href="https://www.rbcroyalbank.com/business/index.html"><img id="menu-business" src="images/menu-business-off.jpg" alt="Business" style="margin-right:20px;"></a>
+              <a href="https://www.rbcwealthmanagement.com/"><img  id="menu-wealth" src="images/menu-wealth-off.jpg" alt="Wealth" style="margin-right:20px;"></a>
+              <a href="http://www.rbcgam.com/landing.html"><img  id="menu-institutional" src="images/menu-institutional-off.jpg" alt="Institutional" style="margin-right:20px;"></a>
+              <a href="https://www.rbc.com/labs/index.html"><img  id="menu-rbclabs" src="images/menu-rbclabs-off.jpg" alt="RBC Labs" style="margin-right:20px;"></a>
+              <a href="https://www.rbc.com/canada.html"><img  id="menu-aboutrbc" src="images/menu-aboutrbc-off.jpg" alt="About RBC" style="margin-right:20px;"></a>
+            </span>
+          </div>
+        </div>
+      </div>                                                                                                                               
+    </div>
+    
+    <div style="background-color:#006ac3; height:70px;" class="hidden-xs hidden-sm">
+      <div class="container hidden-xs hidden-sm">
+         <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-9 text-right">
+            <span>
+              <a href="https://www.rbcroyalbank.com/personal.html"><img id="menu-searchrbc" src="images/menu-searchrbc-off.jpg" alt="Search RBC" style="margin-right:20px;"></a>
+              <a href="https://www.rbcroyalbank.com/customer-service/index.html"><img id="menu-contactus" src="images/menu-contactus-off.jpg" alt="Contact Us" style="margin-right:20px;"></a>
+              <a href="https://www.rbcroyalbank.com/mortgages/index.html"><img id="menu-language" src="images/menu-language-off.jpg" alt="Language (EN)" style="margin-right:20px;"></a>
+              <a href="https://www1.royalbank.com/cgi-bin/rbaccess/rbcgi3m01?F6=1&F7=IB&F21=IB&F22=IB&REQUEST=ClientSignin&LANGUAGE=ENGLISH&_ga=2.82326102.1110752294.1543980222-1878447373.1529171780"><img id="menu-signin" src="images/menu-signin-off.jpg" alt="Sign In" style="margin-right:0px;"></a>
+            </span>
+          </div>
+        </div>
+      </div>                                                                                                                               
+    </div>
+
+    <div style="background-color:#FFFFFF;" class="hidden-xs hidden-sm">
+      <div class="container hidden-xs">
+        <div class="row">
+          <div class="col-sm-2"><img src="images/rbc-logo-shield-lg.png" style="margin-top: -50px;" alt="RBC Logo"></div>
+          <div class="col-sm-10 text-right">
+            <span>
+              <a href="https://www.rbcroyalbank.com/accounts/index.html"><img id="menu-accounts" src="images/menu-accounts-off.jpg" alt="Accounts" style="margin-right:0px;"></a>
+              <a href="https://www.rbcroyalbank.com/credit-cards/index.html"><img id="menu-creditcards" src="images/menu-creditcards-off.jpg" alt="Credit Cards" style="margin-right:0px;"></a>
+              <a href="https://www.rbcroyalbank.com/mortgages/index.html"><img id="menu-mortgages" src="images/menu-mortgages-off.jpg" alt="Mortgages" style="margin-right:0px;"></a>
+              <a href="http://www.rbcroyalbank.com/personal-loans/index.html"><img id="menu-loans" src="images/menu-loans-off.jpg" alt="Loans" style="margin-right:0px;"></a>
+              <a href="https://www.rbcroyalbank.com/investments/index.html"><img id="menu-investments" src="images/menu-investments-off.jpg" alt="Investments" style="margin-right:0px;"></a>
+              <a href="https://www.rbcroyalbank.com/insurance/index.html"><img id="menu-insurance" src="images/menu-insurance-off.jpg" alt="Insurance" style="margin-right:0px;"></a>
+            </span>
+          </div>
+        </div>
+      </div>                                                                                                                               
+    </div>
+
+    <nav role="navigation" class="navbar navbar-default navbar-static-top hidden-md hidden-lg">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand"><img class="img-responsive" src="images/rbcroyalbank-logo-sm.png" alt="RBC Royal Bank" style="margin-top: -9px"></a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="https://www.rbcroyalbank.com/accounts/index.html">Accounts</a></li>
+            <li><a href="https://www.rbcroyalbank.com/credit-cards/index.html">Credit Cards</a></li>
+            <li><a href="https://www.rbcroyalbank.com/mortgages/index.html">Mortgagse</a></li>
+            <li><a href="http://www.rbcroyalbank.com/personal-loans/index.html">Loans</a></li>
+            <li><a href="https://www.rbcroyalbank.com/investments/index.html">Investments</a></li>
+            <li><a href="https://www.rbcroyalbank.com/insurance/index.html">Insurance</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- Main jumbotron -->
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <div class="jumbotron jumbotron-landingpage hidden-xs" style="background-image: url('banner_account.jpg');">
+      <div class="container">
+        <div class="callout-inner" style="padding: 15px; margin-top: 150px; color:#FFFFFF; font-family:Roboto,Arial,Helvetica,sans-serif; background-color: rgba(0,0,0,0.8); width:65%;">
+          <h2 class="text-yellow" id="page-title" style="color: yellow;">Have a question?  Message Us!</h2>
+          <p class="hidden-sm hidden-xs">
+            <form action="" method="post">
+              <select class="topic" name="topicbig" id="topicbig" style="color: #000; height: 40px;">
+                <option value="general">Subject of your Message</option>
+                <option value="billpay">Bill Payment Reversal</option>
+                <option value="ccdispute">Credit Card Dispute</option>
+                <option value="mortgage">Mortgages and Loans</option>
+                <option value="general">Insurance on my Mortgage or Loan</option>
+                <option value="general">Other Personal Banking Products & Services</option>
+                <option value="general">Business Banking Products &amp; Services</option>
+                <option value="general">Registered Plans and Investment Accounts</option>
+                <option value="general">Non-Registered GICs</option>
+                <option value="general">Travel Insurance</option>
+              </select>
+            </form>
+          </p>
+          <div style="text-align:right; margin-bottom: 25px;"><a class="startmessaging" name="startmessaging" href="http://www.rbcroyalbank.com/products/deposits/index.html" style="color:#FFFFFF; border: 1px solid white; padding: 10px; font-size:large;">Start Messaging</a></div>
+        </div>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+    </div>
+    
+    <div class="jumbotron jumbotron-landingpage hidden-sm hidden-md hidden-lg" style="background-image: url('banner_account.jpg');">
+      <div class="container">
+        <div class="callout-inner" style="padding: 15px; margin-top: 150px; color:#FFFFFF; font-family:Roboto,Arial,Helvetica,sans-serif; background-color: rgba(0,0,0,0.8); width:80%;">
+          <h4 class="text-yellow" id="page-title" style="color: yellow;">Have a question?  Message Us!</h4>
+          <p>
+            <form action="" method="post">
+              <select class="topic" name="topicsmall" id="topicsmall" style="color: #000;">
+                <option value="general">Subject of your Message</option>
+                <option value="billpay">Bill Payment Reversal</option>
+                <option value="ccdispute">Credit Card Dispute</option>
+                <option value="mortgage">Mortgages and Loans</option>
+                <option value="general">Insurance on my Mortgage or Loan</option>
+                <option value="general">Other Personal Banking Products & Services</option>
+                <option value="general">Business Banking Products &amp; Services</option>
+                <option value="general">Registered Plans and Investment Accounts</option>
+                <option value="general">Non-Registered GICs</option>
+                <option value="general">Travel Insurance</option>
+              </select>
+            </form>
+          </p>
+          <div style="text-align:right; margin-bottom: 25px;"><a class="startmessaging" href="http://www.rbcroyalbank.com/products/deposits/index.html" style="color:#FFFFFF; border: 1px solid white; padding: 10px; font-size:large;">Get Started</a></div>
+        </div>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    
+    <div class="container" style="margin-top: -50px;">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img class="img-responsive" src="images/better-banking.jpg" alt="Better Banking">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img class="img-responsive" src="images/customer-service.jpg" alt="Customer Service">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img class="img-responsive" src="images/rbc-difference.jpg" alt="RBC Difference">
+          </div>
+        </div>
+        <div class="clearfix visible-md-block"></div>
+      </div>    
+    </div>
+    <br><br><br><br><br><br>
+
+    <!-- ---------------------------  -->
+    <div style="background-color:#006ac3; color:#FFFFFF;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3"><h4>About RBC</h4><p>
+    				<ul class="chevron-list" style="margin-left: 0px; padding-left: 0;">
+    					<li class="no-indent" style="margin-left:0px; padding-left:0px;"><a href="http://www.rbc.com/investorrelations/index.html" id="footer-investor-relations" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Investor Relations</a></li>
+    					<li class="no-indent" style="margin-left:0px; padding-left:0px;"><a href="http://www.rbc.com/newsroom/index.html" id="footer-media-newsroom" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Media Newsroom</a></li>
+    					<li class="no-indent" style="margin-left:0px; padding-left:0px;"><a href="http://www.rbc.com/economics/index.html" id="footer-economics" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Economics</a></li>
+    				</ul>
+    				</p>
+          </div>
+        <div class="col-sm-6 col-lg-3"><h4>Customer Service</h4>
+          <p>
+    				<ul style="margin-left: 0px; padding-left: 0;">
+    					<li class="no-indent"><a href="http://www.rbcroyalbank.com/applyonline.html" id="footer-apply-online" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Apply Online</a></li>
+    					<li class="no-indent"><a href="http://maps.rbc.com/index.en.asp" id="footer-branch-atm-locator" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Branch &amp; ATM Locator</a></li>
+    					<li class="no-indent"><a href="http://www.rbcroyalbank.com/email.html" id="footer-send-us-an-email" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Send us an Email</a></li>
+    					<li class="no-indent"><a href="http://www.rbc.com/voluntary-codes-public-commitments.html" id="footer-voluntary-codes" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Voluntary Codes &amp; Public Commitments</a></li>
+    					<li class="no-indent"><a href="tel:18007692511" id="footer-1-800-769-2511" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">1-800-769-2511</a></li>
+    				</ul>        
+          </p>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-6 col-lg-3"><h4>Daily Numbers</h4>
+          <p>
+    				<ul style="margin-left: 0px; padding-left: 0;">
+    					<li class="no-indent"><a href="http://www.rbcroyalbank.com/cgi-bin/travel/currency-converter.pl?tabset=table" id="footer-foreign-exchange" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Foreign Exchange</a></li>
+    					<li class="no-indent"><a href="http://www.rbcroyalbank.com/rates/index.html" id="footer-rates" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Rates</a></li>
+    					<li class="no-indent"><a href="http://www.rbcroyalbank.com/mortgages/mortgage-rates.html" id="footer-mortgage-rates" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Mortgage Rates</a></li>
+    					<li class="no-indent"><a href="http://funds.rbcgam.com/mutual-funds-prices-performance/index.html" id="footer-mutual-funds" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Mutual Funds</a></li>
+    				</ul>
+    		  </p>
+    		</div>
+        <div class="col-sm-6 col-lg-3"><h4>Protecting Your Money</h4>
+          <p>
+  					<ul style="margin-left: 0px; padding-left: 0;">
+  					  <li class="no-indent"><a href="http://www.rbcroyalbank.com/products/depositregister/index.html" style="color: #FFFFFF; font-size:medium; margin-bottom:35px;">Canada Deposit Insurance Corporation Member Info</a></li>
+  					</ul>
+  					<a href="http://www.cdic.ca/SiteAssets/financial-community/protecting-your-deposits.aspx" style="color: #FFFFFF; margin-left: 50px;">
+  					  <img src="images/cdic-badge-en.svg" style="width: 90px; height:41px;">
+  					</a>
+          </p>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="clearfix visible-lg-block"></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color:#585858; height:100px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" style="margin-top:25px;">
+          <p style="color: #FFFFFF;">Royal Bank of Canada Website, <span class="no-wrap">&copy; 1995-2018</span></p>
+          <p style="color: #FFFFFF;">
+            <a href="http://www.rbc.com/legal/" target="_blank" title="Legal (opens in new window)" style="color: #FFFFFF; text-decoration:underline;">Legal</a> | 
+            <a href="http://www.rbc.com/accessibility/" target="_blank" title="Accessibility (opens in new window)" style="color: #FFFFFF; text-decoration:underline;">Accessibility</a> | 
+            <a href="http://www.rbc.com/privacysecurity/ca/" target="_blank" title="Privacy & Security (opens in new window)" style="color: #FFFFFF; text-decoration:underline;">Privacy &amp; Security</a>
+          </p>
+        </div>
+        <div class="col-sm-6 text-right hidden-xs">
+          <span>
+    				<a href="https://www.facebook.com/rbc" id="footer-facebook"><img src="images/icon-facebook.jpg" alt="Facebook" style="margin-right:15px;"></a>
+    				<a href="https://www.instagram.com/rbc/" id="footer-instagram"><img src="images/icon-instagram.jpg" alt="Instagram" style="margin-right:15px;"></a>
+    				<a href="https://twitter.com/RBC" id="footer-twitter"><img src="images/icon-twitter.jpg" alt="Twitter" style="margin-right:15px;"></a>
+    				<a href="https://www.youtube.com/user/RBC" id="footer-youtube"><img src="images/icon-youtube.jpg" alt="YouTube" style="margin-right:15px;"></a>
+    				<a href="https://www.linkedin.com/company/rbc" id="footer-linkedin"><img src="images/icon-linkedin.jpg" alt="LinkedIn" style="margin-right:10px;"></a>
+            <img src="images/footer-veritical-line.jpg">  
+    				<a href="#skip-nav" style="color: #FFFFFF;"><img src="images/footer-top.jpg"></a>
+          </span>
+        </div>
+      </div>
+    </div>                                                                                                                               
+  </div>
+ 
+  </body>
+</html>

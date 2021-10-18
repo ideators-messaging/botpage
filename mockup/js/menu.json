@@ -1,0 +1,42 @@
+[
+	{
+		"name" : "Accounts",
+		"url" : "http://www.rbcroyalbank.com/products/deposits/index.html"
+	},
+	{
+		"name" : "Credit Cards",
+		"url" : "http://www.rbcroyalbank.com/credit-cards/index.html"
+	},
+	{
+		"name" : "Mortgages",
+		"url" : "http://www.rbcroyalbank.com/mortgages/index.html"
+	},
+	{
+		"name" : "Loans",
+		"url" : "http://www.rbcroyalbank.com/personal-loans/index.html"
+	},
+	{
+		"name" : "Investments",
+		"url" : "https://www.rbcroyalbank.com/investments/index.html"
+	},
+	{
+		"name" : "Insurance",
+		"url" : "https://www.rbcroyalbank.com/insurance/index.html"
+	},
+	{
+		"name" : "Ways To Bank",
+		"url" : "https://www.rbcroyalbank.com/ways-to-bank/index.html"
+	},
+	{
+		"name" : "Newcomers to Canada",
+		"url" : "http://www.rbc.com/newcomers/index.html"
+	},
+	{
+		"name" : "Student Solutions",
+		"url" : "http://www.rbcroyalbank.com/student-solution/index.html"
+	},
+	{
+		"name" : "Discover & Learn",
+		"url" : "https://discover.rbcroyalbank.com/"
+	}
+]
