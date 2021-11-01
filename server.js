@@ -1,6 +1,10 @@
 var express = require("express");
 var app = express();
+var cors = require('cors');
+var fs = require('fs');
+
 app.use(express.static(__dirname + "/"));
+app.use(cors());
 
 app.get("/bot-1", function (req, res) {
   res.sendFile(__dirname + "/bot-1.html");
@@ -16,6 +20,30 @@ app.get("/bot-3", function (req, res) {
 //New route for NICE smart assist integration
 app.get("/smartassist", function (req, res) {
   res.sendFile(__dirname + "/nice_smartassist.html");
+});
+
+app.get("/api/localization", function (req, res){
+  console.log("api/localization test")
+  return new Promise(function (resolve, reject){
+    fs.readFile(`${__dirname}/rbci18n.json`, "utf8", function(err, data){
+      if(err){
+        reject(err);
+      }
+      var contents = JSON.parse(data);
+      console.log("api/localization: Localization file read successfully");
+      return res.json(contents);
+    })
+  })
+
+})
+
+//New route for Genesys MultiClound Widget RBC Demo
+app.get("/rbcgen", function (req, res) {
+  res.sendFile(__dirname + "/genmulticlound.html");
+});
+//New route for Genesys MultiClound Widget Genesys Demo
+app.get("/gen", function (req, res) {
+  res.sendFile(__dirname + "/gendemo.html");
 });
 
 var server = app.listen(process.env.PORT || 6001, function () {
