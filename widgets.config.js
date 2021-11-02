@@ -22,10 +22,10 @@
 	window._genesys.widgets = {
       main: {
             debug: true,
-            theme: "light",
+            theme: "blue",
             lang: "en",
             //customStylesheetID: "genesys_widgets_custom",
-            i18n: "/api/localization",
+            i18n: "/api/localization", //entry point that poinst to the language pack
             preload: ["sidebar"]
       },
       sidebar:{
