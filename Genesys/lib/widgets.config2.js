@@ -65,7 +65,7 @@
             transport: {
                   dataURL: "https://digital.api01-westus2.prod001.genesysengage.com/nexus/v3/chat/sessions",
                   type: "pureengage-v3-rest",
-                  endpoint: "d38_ChatEndpoint1",
+                  endpoint: "d38_RBC_Bot_Agent",
                   headers: {
                         "x-api-key": "c729c2be-1add-49e2-9fe9-45fe7c24aeeb"
                   },
