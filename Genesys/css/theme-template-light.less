@@ -1,0 +1,248 @@
+/**
+* @name common-theme-light.less
+* @desc less file for light theme styles
+*/
+
+/* Convert to CSS using an online tool */
+
+
+/* Color Palette */
+
+@bg_color_1: 		#FDFDFD; // Main Background Color
+@bg_color_2: 		#FDFDFD; // Form Inputs
+@bg_color_3: 		#555D66; // Button default
+@bg_color_4:		#566DD9; // Button primary gradient 1
+@bg_color_5:		#4375d6; // Button primary gradient 2
+@bg_color_6:		#CCCCCC; // Button disabled / scrollbar color
+@bg_color_7: 		#939399; // Scrollbar-thumb color
+
+@txt_color_1: 		#444A52; // Main text color
+@txt_color_2: 		#66759B; // footer text
+@txt_color_3: 		#FDFDFD; // Button default & primary / autocomplete text hover color
+@txt_color_4: 		#000000; // Hyperlink color
+@txt_color_5:		#6F7491; // Placeholder color
+@txt_color_6:		#F53131; // Alert/error color
+
+@icon_color_1:		#FF4F1F; // Base icon color
+@icon_color_2:		#8C8C8C; // Secondary icon color (multitone only)
+@icon_color_3:		#000000; // Icon shadow color (multitone only)
+@icon_color_4:		#000000; // Icon secondary shadow color (multitone only)
+@icon_color_5:		#8795A6; // Window control icon color
+@icon_color_6:		#98A7B8; // Form input icon overlay color (e.g. "clear" icon)
+@icon_color_7: 		#5081E1; // Interactive icon color 1 (attach files, delete file, etc)
+@icon_color_8: 		#34A84F; // Positive Color (confirmation, availability, usually green)
+@icon_color_9: 		#F53131; // Negative Color (error, exception, usually red)
+@icon_color_10:		#D47F2F; // Warning Color (warning, pending, offline, usually yellow or orange)
+@icon_color_11: 	#FDFDFD; // Icon color for primary buttons
+
+@border_color_1: 	#DAE1E8; // Main border color
+@border_color_2:	#2E69DB; // Button primary
+@border_color_3:	transparent; // Button default
+@border_color_4:	transparent; // Button disabled
+@border_color_5:	#F53131; // Alert/error color
+@border_color_6: 	#94948A; // Form controls default state 
+
+@outline_color_1: 	#5791FD; // Form input focus outline / autocomplete hover background color
+@outline_color_2: 	#000;  // Outline color for primary buttons & default buttons
+
+
+
+/*
+	Light Theme Color Overrides
+*/
+
+.cx-widget.cx-theme-light{
+
+	color:@txt_color_1;
+	background-color: @bg_color_1;
+	scrollbar-face-color: @bg_color_6;
+
+	.cx-theme{background-color: @bg_color_1;color:@txt_color_1;border-color: @border_color_1!important;}
+
+	.cx-overlay{background-color: @bg_color_1;}
+
+	.cx-svg-icon-tone1{fill:@icon_color_1;}
+	.cx-svg-icon-tone2{fill:@icon_color_2;}
+	.cx-svg-icon-shadow1{fill:@icon_color_3; opacity:0.2;}
+	.cx-svg-icon-shadow2{fill:@icon_color_4; opacity:0.1;}
+	
+	*{border-color: @border_color_1;}
+
+	.cx-titlebar .cx-title{color: @txt_color_1;}
+
+	.cx-buttons-window-control .cx-svg-icon-tone1{fill: @icon_color_5;}
+	.cx-input-icon-overlay .cx-svg-icon-tone1{fill: @icon_color_6;}
+	.cx-input-group-btn .cx-svg-icon-tone1{fill: @icon_color_11}
+
+	label{color: @txt_color_1;}
+
+	a{color: @txt_color_4;}
+
+	a:hover{color: @txt_color_4;}
+
+	.cx-dropdown{}
+
+	.cx-icon-alert-circle {color: @txt_color_6;}
+
+	.cx-footer, .cx-branding{
+
+		color: @txt_color_2;
+
+		* {
+
+			fill: @txt_color_2;
+		}
+	}
+
+	.cx-form-control.cx-error{border-color: @border_color_5;}
+
+	.cx-form-control::placeholder {color: @txt_color_5}
+	.cx-form-control:-moz-placeholder {color: @txt_color_5}
+	.cx-form-control::-moz-placeholder {color: @txt_color_5}
+	.cx-form-control:-ms-input-placeholder {color: @txt_color_5}
+	.cx-form-control::-webkit-input-placeholder {color: @txt_color_5}
+
+	input:focus,
+	textarea:focus,
+	.cx-btn:focus,
+	.cx-button-group button:focus,
+	.cx-form-control:not(.cx-error):focus{		// let error input fields contain the error border even on focus.
+
+		border-color:@outline_color_1!important;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea{
+
+		background-color: @bg_color_2;
+		color: @txt_color_1;
+		border-color: @border_color_6;
+	}
+
+	// .cx-border-error {
+
+	// 	border-color: @border_color_3!important;
+	// }
+
+	.cx-btn-default{
+
+		background: none;
+		border-color: @border_color_1!important;
+		color: @txt_color_3;
+		background-color: @bg_color_3;
+	}
+
+	.cx-btn.cx-disabled{
+		
+		background: @bg_color_6;
+	}
+
+	.cx-btn-primary{
+
+		color: @txt_color_3;
+		border-color: @border_color_2!important;
+
+		background: @bg_color_4; /* Old browsers */
+		background: -moz-linear-gradient(top, @bg_color_4 0%, @bg_color_5 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, @bg_color_4 0%,@bg_color_5 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, @bg_color_4 0%,@bg_color_5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@bg_color_4', endColorstr='@bg_color_5',GradientType=0 ); /* IE6-9 */
+		background-color: @bg_color_4; /* Old browsers */
+	}
+	/* WCAG: non-text contrast for UI components - primary button focus state */
+	.cx-button-group .cx-btn-primary:focus, .cx-btn-primary:focus, .cx-button-group .cx-btn-default:focus, .cx-btn-default:focus{
+		border-color: @outline_color_2!important;
+	}
+
+	.cx-ac-dropdown-menu {
+
+		background: @bg_color_1;
+		border-color:@border_color_1!important
+	}
+
+	.cx-ac-suggestion:hover,
+	.cx-ac-suggestion.cx-active {
+
+		background-color: @outline_color_1;
+		color: @txt_color_3;
+	}
+
+	::-webkit-scrollbar-thumb {
+
+		background: @bg_color_7; /* WCAG: Non-text contrast */
+	}
+
+	.cx-smokescreen{
+
+		background-color: @bg_color_1;
+		opacity:0.7;
+	}
+
+	.cx-dialog-container{
+
+		.cx-dialog{
+
+			background-color: @bg_color_1;
+			border-color: @border_color_1!important;
+		}
+	}
+
+	.cx-theme-background{
+
+		background-color: @bg_color_1;
+	}
+
+	.cx-theme-border{
+
+		border: 1px solid @border_color_1!important;
+	}
+
+	.cx-theme-text{
+
+		color: @txt_color_1;
+	}
+
+	.cx-theme-icon-interactive1 svg .cx-svg-icon-tone1{
+
+		fill: @icon_color_7;
+	}
+
+	.cx-theme-icon-positive svg .cx-svg-icon-tone1{
+
+		fill: @icon_color_8;
+	}
+
+	.cx-theme-icon-negative svg .cx-svg-icon-tone1{
+
+		fill: @icon_color_9;
+	}
+
+	.cx-theme-icon-warning svg .cx-svg-icon-tone1{
+
+		fill: @icon_color_10;
+	}
+
+	.cx-warning{
+
+		color: @txt_color_6!important;
+
+		.cx-icon svg *{fill: @txt_color_6!important}
+	}
+
+	.cx-countdown{
+
+		color: @txt_color_1;
+
+		.cx-icon svg *{fill: @txt_color_1;}
+	}
+
+	/* loader icon */
+	.cx-loading-screen .cx-loading-icon svg g g, 
+	.cx-loading-container .cx-loading-icon svg g g{ stroke: #2B74FF; }
+	.cx-loading-screen .cx-loading-icon svg g:first-child g,
+	.cx-loading-container .cx-loading-icon svg g:first-child g{ stroke: #72799D; }
+	
+}

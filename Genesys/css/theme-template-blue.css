@@ -1,0 +1,168 @@
+/*
+    Converted to css from less
+*/
+
+.cx-widget.cx-theme-blue {
+    color: #252525;
+    background-color: #FDFDFD;
+    scrollbar-face-color: #A3A8AE;
+    scrollbar-track-color: #212529;
+    scrollbar-arrow-color: #A3A8AE;
+}
+.cx-widget.cx-theme-blue .cx-theme {
+    background-color: #FDFDFD;
+    color: #252525;
+    border-color: #C6C7C9 !important;
+}
+.cx-widget.cx-theme-blue .cx-overlay {
+    background-color: #FDFDFD;
+}
+.cx-widget.cx-theme-blue .cx-svg-icon-tone1 {
+    fill: #FDFDFD;
+}
+.cx-widget.cx-theme-blue .cx-svg-icon-tone2 {
+    fill: #8C8C8C;
+}
+.cx-widget.cx-theme-blue .cx-svg-icon-shadow1 {
+    fill: #000000;
+    opacity: 0.2;
+}
+.cx-widget.cx-theme-blue .cx-svg-icon-shadow2 {
+    fill: #000000;
+    opacity: 0.1;
+}
+.cx-widget.cx-theme-blue * {
+    border-color: #C6C7C9;
+}
+.cx-widget.cx-theme-blue .cx-titlebar .cx-title {
+    color: #FDFDFD;
+    background-color: #006AC3;
+    border-color: transparent;
+}
+.cx-widget.cx-theme-blue .cx-buttons-window-control .cx-svg-icon-tone1 {
+    fill: #FDFDFD;
+}
+.cx-widget.cx-theme-blue .cx-input-icon-overlay .cx-svg-icon-tone1 {
+    fill: #98A7B8;
+}
+.cx-widget.cx-theme-blue label {
+    color: #252525;
+}
+.cx-widget.cx-theme-blue a {
+    color: #5081E1;
+}
+.cx-widget.cx-theme-blue a:hover {
+    color: #252525;
+}
+.cx-widget.cx-theme-blue .cx-icon-alert-circle {
+    color: #EA4F6B;
+}
+.cx-widget.cx-theme-blue .cx-footer, .cx-widget.cx-theme-blue .cx-branding {
+    color: #98A7B8;
+}
+.cx-widget.cx-theme-blue .cx-footer *, .cx-widget.cx-theme-blue .cx-branding * {
+    fill: #98A7B8;
+}
+.cx-widget.cx-theme-blue .cx-form-control {
+    background-color: #FDFDFD;
+    color: #252525;
+}
+.cx-widget.cx-theme-blue .cx-form-control.cx-error {
+    border-color: #EA4F6B !important;
+}
+.cx-widget.cx-theme-blue .cx-form-control::placeholder {
+    color: #C6C7C9;
+}
+.cx-widget.cx-theme-blue .cx-form-control:-moz-placeholder {
+    color: #C6C7C9;
+}
+.cx-widget.cx-theme-blue .cx-form-control::-moz-placeholder {
+    color: #C6C7C9;
+}
+.cx-widget.cx-theme-blue .cx-form-control:-ms-input-placeholder {
+    color: #C6C7C9;
+}
+.cx-widget.cx-theme-blue .cx-form-control::-webkit-input-placeholder {
+    color: #C6C7C9;
+}
+.cx-widget.cx-theme-blue input:focus, .cx-widget.cx-theme-blue textarea:focus, .cx-widget.cx-theme-blue .cx-btn:focus, .cx-widget.cx-theme-blue .cx-button-group button:focus, .cx-widget.cx-theme-blue .cx-form-control:not(.cx-error):focus {
+    border-color: #C6C7C9 !important;
+}
+.cx-widget.cx-theme-blue input, .cx-widget.cx-theme-blue select, .cx-widget.cx-theme-blue textarea {
+    background-color: #FDFDFD;
+    color: #252525;
+    border-color: #758384;
+}
+.cx-widget.cx-theme-blue .cx-btn-default {
+    background: none;
+    border-color: #006AC3 !important;
+    color: #006AC3;
+    background-color: #FDFDFD;
+}
+.cx-widget.cx-theme-blue .cx-btn.cx-disabled {
+    background: #CCCCCC;
+}
+.cx-widget.cx-theme-blue .cx-btn-primary {
+    color: #FDFDFD;
+    border-color: #006AC3 !important;
+    background: #006AC3;
+    background: -moz-linear-gradient(top,#006AC3 0%,#0059b3 100%);
+    background: -webkit-linear-gradient(top,#006AC3 0%,#0059b3 100%);
+    background: linear-gradient(to bottom,#006AC3 0%,#0059b3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@bg_color_4',endColorstr='@bg_color_5',GradientType=0);
+}
+.cx-widget.cx-theme-blue .cx-button-group .cx-btn-primary:focus, .cx-widget.cx-theme-blue .cx-btn-primary:focus {
+    border-color: #DAE6FC !important;
+}
+.cx-widget.cx-theme-blue .cx-ac-dropdown-menu {
+    background: #FDFDFD;
+    border-color: #C6C7C9 !important;
+}
+.cx-widget.cx-theme-blue .cx-ac-suggestion:hover, .cx-widget.cx-theme-blue .cx-ac-suggestion.cx-active {
+    background-color: #C6C7C9;
+    color: #006AC3;
+}
+.cx-widget.cx-theme-blue ::-webkit-scrollbar-thumb {
+    background: #A3A8AE;
+}
+.cx-widget.cx-theme-blue .cx-smokescreen {
+    background-color: #FDFDFD;
+    opacity: 0.7;
+}
+.cx-widget.cx-theme-blue .cx-dialog-container .cx-dialog {
+    background-color: #FDFDFD;
+    border-color: #C6C7C9 !important;
+}
+.cx-widget.cx-theme-blue .cx-theme-background {
+    background-color: #FDFDFD;
+}
+.cx-widget.cx-theme-blue .cx-theme-border {
+    border: 1px solid #C6C7C9 !important;
+}
+.cx-widget.cx-theme-blue .cx-theme-text {
+    color: #252525;
+}
+.cx-widget.cx-theme-blue .cx-theme-icon-interactive1 svg .cx-svg-icon-tone1 {
+    fill: #5081E1;
+}
+.cx-widget.cx-theme-blue .cx-theme-icon-positive svg .cx-svg-icon-tone1 {
+    fill: #4AC764;
+}
+.cx-widget.cx-theme-blue .cx-theme-icon-negative svg .cx-svg-icon-tone1 {
+    fill: #F53131;
+}
+.cx-widget.cx-theme-blue .cx-theme-icon-warning svg .cx-svg-icon-tone1 {
+    fill: #F8A740;
+}
+.cx-widget.cx-theme-blue .cx-warning {
+    color: #EA4F6B !important;
+}
+.cx-widget.cx-theme-blue .cx-warning .cx-icon svg * {
+    fill: #EA4F6B !important;
+}
+.cx-widget.cx-theme-blue .cx-countdown {
+    color: #252525;
+}
+.cx-widget.cx-theme-blue .cx-countdown .cx-icon svg * {
+    fill: #252525;
+}

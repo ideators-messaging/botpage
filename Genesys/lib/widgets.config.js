@@ -22,11 +22,14 @@
 	window._genesys.widgets = {
       main: {
             debug: true,
-            theme: "blue",
+            theme: "light",
             lang: "en",
             //customStylesheetID: "genesys_widgets_custom",
-            i18n: "/api/localization", //entry point that poinst to the language pack
-            preload: ["sidebar"]
+            i18n: "/api/localization", //entry point that points to the language pack
+            preload: ["sidebar"],
+            // themes: {
+            //     "blue": "cx-theme-blue"
+            // }
       },
       sidebar:{
             showOnStartup: true, 
@@ -113,22 +116,22 @@
                         id: "cx_webchat_form_lastname",
                         name: "lastname",
                         maxlength: "100",
-                        placeholder: "@i18n:webchat.ChatFormPlaceholderLastName",
+                        //placeholder: "@i18n:webchat.ChatFormPlaceholderLastName",
+                        placeholder: "@i18n:webchat.ChatFormPlaceholderEmail", //optional
                         label: "@i18n:webchat.ChatFormLastName"
                     },
              
-                    {
-                        id: "cx_webchat_form_email",
-                        name: "email", 
-                        maxlength: "100",
-                        //placeholder: "@i18n:webchat.ChatFormPlaceholderEmail",
-                        placeholder: "@i18n:webchat.ChatFormPlaceholderLastName",
-                        label: "@i18n:webchat.ChatFormEmail",
-                        validate: function(event, form, input, label, $, CXBus, Common){
-                            let text = !!input ? input.val() : 'nok';
-                            return text.includes("@");
-                        }
-                    },
+                    // {
+                    //     id: "cx_webchat_form_email",
+                    //     name: "email", 
+                    //     maxlength: "100",
+                    //     placeholder: "@i18n:webchat.ChatFormPlaceholderEmail",
+                    //     label: "@i18n:webchat.ChatFormEmail",
+                    //     validate: function(event, form, input, label, $, CXBus, Common){
+                    //         let text = !!input ? input.val() : 'nok';
+                    //         return text.includes("@");
+                    //     }
+                    // },
              
                     {
                         id: "cx_webchat_form_subject", 
