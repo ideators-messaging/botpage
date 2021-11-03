@@ -1,0 +1,58 @@
+/* Sidebar */
+.cx-sidebar .cx-sidebar-button{
+    background-color: #006AC3;
+    color: #fdfdfd;
+}
+/*Client bubble*/
+.cx-webchat .cx-message.cx-you .cx-bubble
+{
+    background-color: #006AC3 !important;
+}
+.cx-webchat .cx-message.cx-you .cx-bubble-arrow svg * {
+    fill: #006AC3;
+}
+.cx-webchat .cx-message.cx-you .cx-message-text {
+    color: white;
+    padding-top: 8px;
+}
+.cx-webchat .cx-transcript .cx-message.cx-you .cx-time {
+    color : white;
+}
+.cx-webchat .cx-transcript .cx-message.cx-you .cx-name {
+    color : white;
+}
+/*Agent bubble*/
+.cx-webchat .cx-message.cx-them .cx-bubble
+{
+    background-color:#EEEEEE !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+
+}
+.cx-webchat .cx-message.cx-them .cx-bubble-arrow svg * {
+    fill: #EEEEEE;
+}
+.cx-webchat .cx-message.cx-them .cx-message-text {
+    padding-top: 8px;
+}
+/*Agent avatar image*/
+.cx-webchat .cx-transcript .cx-message div.cx-avatar-wrapper svg{
+    display: none;
+}
+.cx-webchat .cx-transcript .cx-message .cx-avatar-wrapper{
+    background-image: url('../img/icon_customer-service.png');
+    width: 18px !important;
+    height: 20px !important;
+}
+.cx-webchat .cx-transcript .cx-message .cx-avatar{
+    width: 18px !important;
+    height: 20px !important;
+}
+/*Genesys logo*/
+.cx-webchat .cx-menu .cx-branding-icon svg * {
+    display: none;
+}
+/*Poweredby Genesys logo*/
+.cx-common-container .cx-footer .cx-powered-by{
+    display: none !important;
+}

@@ -22,14 +22,14 @@
 	window._genesys.widgets = {
       main: {
             debug: true,
-            theme: "light",
+            theme: "blue",
             lang: "en",
             //customStylesheetID: "genesys_widgets_custom",
             i18n: "/api/localization", //entry point that points to the language pack
             preload: ["sidebar"],
-            // themes: {
-            //     "blue": "cx-theme-blue"
-            // }
+            themes: {
+                "blue": "cx-theme-blue"
+            }
       },
       sidebar:{
             showOnStartup: true, 

@@ -1,7 +1,3 @@
-/*
-    Converted to css from less
-*/
-
 .cx-widget.cx-theme-blue {
     color: #252525;
     background-color: #FDFDFD;
@@ -34,7 +30,7 @@
 .cx-widget.cx-theme-blue * {
     border-color: #C6C7C9;
 }
-.cx-widget.cx-theme-blue .cx-titlebar .cx-title {
+.cx-widget.cx-theme-blue .cx-titlebar {
     color: #FDFDFD;
     background-color: #006AC3;
     border-color: transparent;
