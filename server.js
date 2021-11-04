@@ -46,9 +46,9 @@ app.get("/rbcgenbot", function (req, res) {
   res.sendFile(__dirname + "/Genesys/genmlbot.html");
 });
 //New route for Genesys MultiClound Widget Genesys Demo
-// app.get("/gen", function (req, res) {
-//   res.sendFile(__dirname + "/gendemo.html");
-// });
+app.get("/gen", function (req, res) {
+  res.sendFile(__dirname + "/Genesys/gendemo.html");
+});
 
 var server = app.listen(process.env.PORT || 6001, function () {
   var port = server.address().port;
