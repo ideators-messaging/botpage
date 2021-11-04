@@ -1,0 +1,20 @@
+* {
+	font-family: Roboto, Helvetica, Arial, Sans-Serif;
+	font-weight: 300;
+}
+
+body {padding: 1em; }
+h1 {color: FF4F1F;}
+h2 {color: 5D3E5D;}
+.genesys_red {color: FF4F1F;}
+
+.imgbox { display: grid; height: 70%; }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+
+div.in_center { text-align: center; }
+
+div.gradient { background-image: url(images/gradient-background.svg); padding: 20px; }
