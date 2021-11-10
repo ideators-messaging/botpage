@@ -37,9 +37,9 @@ app.get("/api/localization", function (req, res){
 
 })
 
-//New route for Genesys MultiClound Widget RBC Demo-Pratik
+//New route for Genesys MultiClound Widget RBC Demo-Bot to Agent
 app.get("/rbcgen", function (req, res) {
-  res.sendFile(__dirname + "/Genesys/genmulticlound.html");
+  res.sendFile(__dirname + "/Genesys/genmulticloud.html");
 });
 //New route for Genesys MultiClound Widget RBC Demo-Rich
 app.get("/rbcgenbot", function (req, res) {

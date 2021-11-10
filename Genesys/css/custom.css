@@ -56,3 +56,18 @@
 .cx-common-container .cx-footer .cx-powered-by{
     display: none !important;
 }
+/* Quick Reply button border*/
+.cx-widget .cx-rich-media.cx-quick-replies .cx-quick-reply{
+    background-color: #FFFFFF !important;
+    color: black !important;
+    border: 1px solid black !important
+}
+.cx-widget .cx-menu .cx-menu-item.cx-emoji.cx-icon .cx-svg-icon-tone1 {
+    fill: #006AC3;
+}
+.cx-widget .cx-menu .cx-menu-item.cx-upload.cx-icon .cx-svg-icon-tone1 {
+    fill: #006AC3;
+}
+.cx-widget .cx-send.cx-icon .cx-svg-icon-tone1 {
+    fill: #006AC3;
+}

@@ -56,7 +56,9 @@
             ]
       },
       webchat: {
-            userData: {},
+            userData: {
+                ccn: '4113-1111-1111-1115',
+            },
             emojis: true,
             cometD: {
                   enabled: false
@@ -72,12 +74,12 @@
                   effectDuration: 300,
                   hideDuringInvite: true
             },
-            uploadsEnabled: false,
+            uploadsEnabled: true,
             enableCustomHeader: true,
             transport: {
                   dataURL: "https://digital.api01-westus2.prod001.genesysengage.com/nexus/v3/chat/sessions",
                   type: "pureengage-v3-rest",
-                  endpoint: "d38_ChatEndpoint1",
+                  endpoint: "d38_RBC_Bot_Agent",
                   headers: {
                         "x-api-key": "c729c2be-1add-49e2-9fe9-45fe7c24aeeb"
                   },
@@ -116,8 +118,8 @@
                         id: "cx_webchat_form_lastname",
                         name: "lastname",
                         maxlength: "100",
-                        //placeholder: "@i18n:webchat.ChatFormPlaceholderLastName",
-                        placeholder: "@i18n:webchat.ChatFormPlaceholderEmail", //optional
+                        placeholder: "@i18n:webchat.ChatFormPlaceholderLastName",
+                        // placeholder: "@i18n:webchat.ChatFormPlaceholderEmail", //optional
                         label: "@i18n:webchat.ChatFormLastName"
                     },
              
