@@ -50,6 +50,11 @@ app.get("/gen", function (req, res) {
   res.sendFile(__dirname + "/Genesys/gendemo.html");
 });
 
+//New route for Live Person demo page
+app.get("/lp", function (req, res) {
+  res.sendFile(__dirname + "/lpdemo.html");
+});
+
 var server = app.listen(process.env.PORT || 6001, function () {
   var port = server.address().port;
   console.log("App now running on port ", port);
