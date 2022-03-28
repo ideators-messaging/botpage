@@ -51,8 +51,12 @@ app.get("/gen", function (req, res) {
 });
 
 //New route for Live Person demo page
-app.get("/lp", function (req, res) {
+app.get("/lp_old", function (req, res) {
   res.sendFile(__dirname + "/lpdemo.html");
+});
+//New route for LP new sandbox 68990778
+app.get("/lp_new", function (req, res) {
+  res.sendFile(__dirname + "/lpdemo2.html");
 });
 
 var server = app.listen(process.env.PORT || 6001, function () {
