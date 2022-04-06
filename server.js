@@ -54,9 +54,13 @@ app.get("/gen", function (req, res) {
 app.get("/lp_old", function (req, res) {
   res.sendFile(__dirname + "/lpdemo.html");
 });
-//New route for LP new sandbox 68990778
+//New route for LP new sandbox 68990778 - Testing
 app.get("/lp_new", function (req, res) {
   res.sendFile(__dirname + "/lpdemo2.html");
+});
+//New route for LP new sandbox 68990778 -CEBA bot
+app.get("/lp_new_ceba", function (req, res) {
+  res.sendFile(__dirname + "/lpdemo3.html");
 });
 
 var server = app.listen(process.env.PORT || 6001, function () {
